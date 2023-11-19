@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+  char *nom;
+  char *prenom;
+  char *adresse;
+} Personne;
+
+void saisirPersonne(Personne *personne) {
+  printf("Entrez le nom de la personne : ");
+  fgets(personne->nom, 255, stdin);
+  personne->nom[strlen(personne->nom) - 1] = '\0';
+
+  printf("Entrez le prénom de la personne : ");
+  fgets(personne->prenom, 255, stdin);
+  personne->prenom[strlen(personne->prenom) - 1] = '\0';
+
+  char saisie[255];
+  printf("Souhaitez-vous saisir une adresse (o/n) ");
+  fgets(saisie, 255, stdin);
+  saisie[strlen(saisie) - 1] = '\0';
+
+  if (saisie[0] == 'o') {
+    printf("Entrez l'adresse : ");
+    fgets(personne->adresse, 255, stdin);
+    personne->adresse[strlen(personne->adresse) - 1] = '\0';
+  }
+}
+
+void afficherPersonne(Personne *personne) {
+  printf("Nom : %s\n", personne->nom);
+  printf("Prénom : %s\n", personne->prenom);
+
+  if (personne->adresse != NULL) {
+    printf("Adresse : %s\n", personne->adresse);
+  }
+}
+
+int main() {
+  Personne *personne = malloc(sizeof(Personne));
+
+  saisirPersonne(personne);
+
+  afficherPersonne(personne);
+
+  free(personne);
+
+  return 0;
+}
