@@ -1,0 +1,132 @@
+  
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    header {
+        background-color: rgb(209, 245, 255);
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #etudient  {
+        
+        margin-left: 80px;
+        color: #1900ff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.9s ease;
+    }
+     #etudient :hover {
+        color: #1900ff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu li {
+        display: inline;
+        margin-right: 20px;
+        transition: color 0.3s ease;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    .menu a:hover {
+        color: #ffcc00;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    .img1 img {
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px rgba(0, 60, 255, 0.3);
+        transition: transform 0.9s ease;
+    }
+    
+    .img1 img:hover {
+        transform: scale(1.1);
+            color: #1900ff;
+            text-shadow: 
+        
+    }
+    
+    #bien {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #b4b4b4;
+    }
+    
+    section {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #je {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .ala {
+        text-align: justify;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    #pro table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .tab tr {
+        background-color: #f9f9f9;
+    }
+    
+    .tab td {
+        padding: 15px;
+        border: 1px solid #636363;
+        transition: background-color 0.3s ease;
+    }
+    
+    .tab td img {
+        max-width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+        height: 150px;
+    }
+    
+    .tab td:hover {
+        background-color: #ececec;
+    }
+    
+    .tab td:hover img {
+        transform: scale(1.1);
+    }
